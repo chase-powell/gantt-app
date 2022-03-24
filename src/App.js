@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import Gantt from "./components/Gantt";
+import React, { Component, useEffect } from "react";
+import Gantt from "./components/Gantt.js";
 import "./App.css";
 
 const data = {
@@ -21,15 +21,13 @@ const data = {
   ],
   links: [{ id: 1, source: 1, target: 2, type: "0" }],
 };
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <div className="gantt-container">
-          <Gantt tasks={data} />
-        </div>
+const App = (props) => {
+  return (
+    <div>
+      <div className="gantt-container">
+        <Gantt tasks={data} />
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 export default App;
