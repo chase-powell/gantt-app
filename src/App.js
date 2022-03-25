@@ -1,5 +1,5 @@
 import React, { Component, useEffect } from "react";
-import Gantt from "./components/Gantt.js";
+import Gantt from "./components/Gantt/Gantt.js";
 import "./App.css";
 
 const data = {
@@ -21,7 +21,7 @@ const data = {
   ],
   links: [{ id: 1, source: 1, target: 2, type: "0" }],
 };
-const App = (props) => {
+const App = () => {
   return (
     <div>
       <div className="gantt-container">
