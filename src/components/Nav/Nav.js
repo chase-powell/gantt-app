@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import "./Nav.css";
 
 const Nav = () => {
-  console.log("nav bar here")
   return (
     <nav className="nav-bar">
-      <button>
-        <Link to="/login">Logout</Link>
+      <p>Welcome, Username</p>
+      <button className="nav-link">
+        <Link to="/login" className="link">Logout</Link>
       </button>
     </nav>
   );
