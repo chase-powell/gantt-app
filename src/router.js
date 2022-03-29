@@ -1,6 +1,7 @@
 import React from "react";
+import { Switch, Route } from 'react-router'
 // import dashboard from "./components/dashboard"
-// import login from "./components/login"
+// import Login from "./components/login"
 
 
 // const Router = () => {
