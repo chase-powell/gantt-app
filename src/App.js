@@ -1,6 +1,8 @@
 import React, { Component, useEffect } from "react";
+import { BrowserRouter } from "react-router-dom";
 import Gantt from "./components/Gantt/Gantt.js";
 import "./App.css";
+import Nav from "./components/Nav/Nav.js";
 
 const data = {
   data: [
@@ -23,11 +25,12 @@ const data = {
 };
 const App = () => {
   return (
-    <div>
+    <BrowserRouter>
+      <Nav />
       <div className="gantt-container">
         <Gantt tasks={data} />
       </div>
-    </div>
+    </BrowserRouter>
   );
 };
 export default App;

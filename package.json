@@ -9,7 +9,10 @@
     "dhtmlx-gantt": "^7.1.10",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+<<<<<<< HEAD
+=======
     "react-router": "^6.2.2",
+>>>>>>> 2b1951065c96ce0dcab32f40f178ed18876bfe62
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
     "web-vitals": "^2.1.4"
