@@ -1,8 +1,10 @@
 import React, { Component, useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
+import Router from "./Router.js";
 import Gantt from "./components/Gantt/Gantt.js";
 import "./App.css";
 import Nav from "./components/Nav/Nav.js";
+import CohortForm from "./components/Forms/CohortForm.js";
 
 const data = {
   data: [
@@ -30,7 +32,10 @@ const App = () => {
       <div className="gantt-container">
         <Gantt tasks={data} />
       </div>
+  <CohortForm/>
+    <Router />
     </BrowserRouter>
+
   );
 };
 export default App;
