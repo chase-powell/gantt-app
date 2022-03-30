@@ -39,10 +39,9 @@ const App = () => {
       <div className="gantt-container">
         <Gantt tasks={data} />
       </div>
-  <CohortForm/>
-    <Router />
+      <CohortForm />
+      <Router />
     </BrowserRouter>
-
   );
 };
 export default App;
